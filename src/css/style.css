@@ -1,0 +1,139 @@
+body{
+  background-color: #222222;
+  height: 100vh;
+}
+h1{
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: grey;
+}
+h3{
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: grey;
+}
+h4{
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: grey;
+}
+.container-calc{
+  display: flex;
+  justify-content: center;
+}
+.calculator{
+  width: 420px;
+  height: 600px;
+  background: #EEEEEE;
+  border-radius: 20px;
+}
+.keyboard{
+  margin-bottom: 50px;
+}
+.display input{
+  font-family: 'Orbitron', sans-serif;
+  cursor: grab;
+  color: gray;
+  background: #EEEEEE;
+  text-align: right;
+  width: 340px;
+  height: 100px;
+  font-size: 40px;
+  border-radius: 20px;
+  margin: 50px 40px;
+  align-items: center;
+  align-content: center;
+  border: none;
+}
+.keyboard .row{
+  text-align: center;
+}
+.keyboard button{
+  font-family: 'Orbitron', sans-serif;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  color: grey;
+  background: #EEEEEE;
+  font-weight: bold;
+  box-shadow: 6px 6px 16px 0 rgba(209, 205, 199, .5),
+  -6px -6px 16px 0 rgba(255, 255, 255, .5);
+  border: none;
+}
+button:active{
+  box-shadow: inset -6px -6px 16px 0 rgba(255, 255, 255, .5), inset 6px 6px 16px 0 rgba(209, 205, 199, .5) ;
+}
+.keyboard .operator{
+  color: crimson;
+  font-weight: 500;
+}
+@media (max-width: 576px){
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+  .calculator-app{
+    justify-content: center;
+  }
+  .container-calc{
+    display: flex;
+    justify-content: center;
+  }
+  h1{
+    text-align: center;
+    font-size: 24px;
+    color: grey;
+  }
+  h3{
+    font-size: 14px;
+    text-align: center;
+    color: grey;
+  }
+  h4{
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+  }
+  .calculator{
+    width: 280px;
+    height: 380px;
+    background: #EEEEEE;
+    border-radius: 20px;
+  }
+  .keyboard button{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 50%;
+    color: grey;
+    background: #EEEEEE;
+    font-weight: bold;
+    box-shadow: 4px 4px 12px 0 rgba(209, 205, 199, .5),
+    -4px -4px 12px 0 rgba(255, 255, 255, .5);
+  }
+  .display input{
+    cursor: grab;
+    color: gray;
+    background: #EEEEEE;
+    text-align: right;
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 30px 25px;
+    align-items: center;
+    align-content: center;
+  }
+  .keyboard{
+    margin-bottom: 20px;
+  }
+  .calculator-app{
+    margin-top:40px;
+  }
+}
